@@ -1,0 +1,63 @@
+#counterApp, #counter{
+    text-align: center;
+    font-size: 45px;
+}
+#counter{
+    margin-top: 20px;
+}
+.block{
+    display: block;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 20px 200px 100px 200px;
+}
+#incrementBtn, #decrementBtn, #resetBtn{
+    width: 15%;
+    padding: 15px;
+    background-color: rgb(88, 217, 240);
+    border-radius: 15%;
+    border-style: none;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+#btn-container{
+    display: flex;
+     gap: 10px;
+    justify-content: center;
+}
+#incrementBtn:hover{
+    background-color: rgb(75, 177, 195);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+#resetBtn:hover{
+    background-color: rgb(75, 177, 195);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+#decrementBtn:hover{
+    background-color: rgb(75, 177, 195);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+@media  screen and (min-width:319px ) and (max-width:568px) {
+    .block{
+        margin: unset !important;
+    }
+    #incrementBtn, #decrementBtn, #resetBtn{
+        width: 30%;
+        
+    }
+    #btn-container{
+        gap: 5px !important;    
+    }
+}
+@media  screen and (min-width:568px) and (max-width: 1024px) {
+    .block{
+        margin: 20px 150px 100px 150px;
+    }
+    #incrementBtn, #decrementBtn, #resetBtn{
+        width: 22%;
+    }
+}
